@@ -1,0 +1,676 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Aidabook;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body{
+    background: #adbbda;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #003135;
+    transform: translateY(-500px);
+    transition: 1s;
+}
+.ul{
+    position: absolute;
+    display: flex;
+    gap: 100px;
+    left: 800px;
+    top: 30px;
+}
+.ul li{
+    color: #ebe7e7;
+    list-style: none;
+}
+.ul .logo{
+    position: absolute;
+    left: -700px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.9;
+}
+.imgbox{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    transform: translate(-700px);
+    transition: 1.2s;
+}
+.imgbox.loaded , .me.loaded , .nav.loaded{
+    transform: translateX(0px);
+    transform: translateX(0px);
+    transform: translateY(0px);
+}
+.img{
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+.me{
+    position: absolute;
+    width: 950px;
+    height: 400px;
+    background-color: #Bab2b5;
+    top: 100px;
+    left: 550px;
+    border-radius: 10px;
+    transform: translateX(700px);
+    transition: 1.2s;
+}
+.pme{
+    color: #212020;
+    position: relative;
+    top: 70px;
+    font-size: 1.24rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.about{
+    position: relative;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+    width: 97.3%;
+    height: 670px;
+    background-color: #Bab2b5;
+    top: 50px;
+}
+.pabout{
+    color: #212020;
+    position: relative;
+    top: 10px;
+    font-size: 1.24rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background: #242228;
+    top: 100px;
+}
+.contact p{
+    color: #fff;
+    
+}
+
+.contact h2{
+    text-align: center;
+    font: 2rem;
+    color: #eee;
+    position: relative;
+    top: 20px;
+}
+
+.slider {
+    position: relative;
+    top: 100px;
+    left: 20%;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .slider h2{
+    position: relative;
+    text-align: center;
+    font-family: 2rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0;
+    top: 100px;
+    transition: opacity 0.6s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    /* z-index: 1; */
+    padding: 10px;
+  }
+  
+  button.prev { left: 10px; }
+  button.next { right: 10px; }
+
+.bt{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background: #96a4c0;
+    left: 95%;
+    bottom: 100px;
+    cursor: pointer;
+    opacity: 0;
+}
+.bt.scr{
+    opacity: 1;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    color: #242228;
+    position: absolute;
+    left: 15px;
+    top: 9px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.button:active{
+    opacity: 0.7;
+}
+.ul2{
+    position: relative;
+  display: flex;
+  gap: 150px;
+}
+.ul2 li{
+    position: relative;
+    left: 220px;
+    list-style: none;
+    top: 40px;
+}
+.ul2 p{
+    opacity: 0.7;
+}
+
+
+.menu , .close{
+    position: relative;
+    left: 37%;
+    top: 20px;
+    border: none;
+    color: #eee;
+    background-color: transparent;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: 0s;
+}
+
+@media screen and ( max-width:1286px ){
+
+    .imgbox{
+        width: 400px;
+        height: 300px;
+    }
+    .img{
+        width: 400px;
+        height: 300px;
+    }
+    .me{
+        width: 800px;
+        height: 300px;
+        left: 450px;
+    }
+    .pme{
+        top: 50px;
+    font-size: 0.9rem;
+    }
+
+    .ul{
+        left: 600px;
+    }
+    .ul .logo{
+        left: -570px;
+    }
+    .nav{
+        width: 103%;
+    }
+.about .pabout{
+    font-size: 1.1rem;
+}
+.slider{
+    left: 15%;
+}
+.ul2{
+    gap: 100px;
+    left: -50px;
+}
+.contact{
+    width: 103%;
+}
+}
+
+@media screen and ( max-width:884px ){
+
+    .nav{
+        width: 884px;
+    }
+    .ul{
+        gap: 40px;
+    }
+    .ul{
+        left: 400px;
+    }
+    .ul .logo{
+        left: -370px;
+    }
+
+    .imgbox{
+        width: 350px;
+        height: 250px;
+     }
+     .img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .me{
+        width: 470px;
+        height: 250px;
+        left: 390px;
+    }
+    
+    
+    .pme{
+        top: 25px;
+    font-size: 0.8rem;
+    } 
+
+    .about{
+        width: 835px;
+    }
+.about .pabout{
+    font-size: 0.94rem;
+}
+
+.slider{
+    left: 4%;
+    width: 800px;
+}
+    .ul2{
+        left: -200px;
+    }
+    .ul2 p{
+        font-size: 0.85rem;
+    }
+}
+
+
+
+@media screen and ( max-width:820px ){
+    .me{
+        width: 380px;
+        height: 250px;
+        left: 380px;
+    }
+    .pme{
+        top: 30px;
+        font-size: 0.7rem;
+    }
+    .about{
+        width: 730px;
+        height: 710px;
+    }
+    
+    .slider{
+        left: 1%;
+    }
+
+    .ul2 p{
+        font-size: 0.73rem;
+    }
+}
+@media screen and ( max-width:820px ){
+    .ul{
+        left: 370px;
+    }
+    .ul .logo{
+        left: -340px;
+    }
+    .slider{
+        left: 2%;
+        width: 730px;
+    }
+
+    .ul2 p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and ( max-width:710px ){
+    .ul{
+        left: 370px;
+    }
+    .ul .logo{
+        left: -340px;
+    }
+    .slider{
+        left: 1%;
+        width: 730px;
+    }
+
+    .ul2 p{
+        font-size: 0.7rem;
+    }
+    .nav , .contact{
+        width: 711px;
+    }
+    .ul2 p{
+        font-size: 0.65rem;
+    }
+}
+
+
+@media screen and ( max-width:428px ){
+
+    .nav .menu{
+        opacity: 1;
+        left: 340px;
+     }
+     .nav .close{
+        left: 300px;
+     }
+     .nav .menu.hide{
+        left: -3000px;
+     }
+     .close.show{
+        opacity: 1;
+     }
+     .close.hide{
+        opacity: 0;
+     }
+     .me.show{
+        top: 480px;
+     }
+    .ul{
+        display: block;
+        left: 30px;
+        top: 70px;
+       transform: translateX(-140px);
+    }
+    .ul .logo{
+        top: -50px;
+        left: 30px;
+        transform: translateX(130px);
+    }
+    .logo.show{
+        transform: translateX(0px);
+    }
+    .ul.show{
+        transform: translateX(0px);
+    }
+    .nav.show{
+        height: 200px;
+    }
+
+    .logo.hide{
+        transform: translateX(300px);
+    }
+    .ul.hide{
+        transform: translateX(-300px);
+    }
+    .nav.hide{
+        height: 80px;
+    }
+      .nav{
+        width: 428px;
+      }
+
+    .me{
+        width: 370px;
+        height: 270px;
+        left: 23px;
+        top: 370px;
+    }
+    .imgbox{
+        left: 20px;
+        width: 370px;
+    }
+    .img{
+        width: 370px;
+    }
+.about{
+    top: 300px;
+    width: 370px;
+    left: 3px;
+}
+.about .pabout{
+    font-size: 0.6rem;
+}
+.slider{
+    top: 300px;
+    width: 370px;
+    left: 20px;
+
+}
+.contact{
+    top: 300px;
+    width: 428px;
+}
+.contact p{
+    font-size: 0.59rem;
+}
+.ul2{
+    gap: 10px;
+    left: -210px;
+}
+.bt{
+    left: 88%;
+}
+}
+
+@media screen and ( max-width:400px ){
+
+    .nav .menu{
+        opacity: 1;
+        left: 340px;
+     }
+     .nav .close{
+        left: 300px;
+     }
+     .nav .menu.hide{
+        left: -3000px;
+     }
+     .close.show{
+        opacity: 1;
+     }
+     .close.hide{
+        opacity: 0;
+     }
+     .me.show{
+        top: 480px;
+     }
+    .ul{
+        display: block;
+        left: 30px;
+        top: 70px;
+       transform: translateX(-140px);
+    }
+    .ul .logo{
+        top: -50px;
+        left: 30px;
+        transform: translateX(130px);
+    }
+    .logo.show{
+        transform: translateX(0px);
+    }
+    .ul.show{
+        transform: translateX(0px);
+    }
+    .nav.show{
+        height: 200px;
+    }
+
+    .logo.hide{
+        transform: translateX(300px);
+    }
+    .ul.hide{
+        transform: translateX(-300px);
+    }
+    .nav.hide{
+        height: 80px;
+    }
+      .nav{
+        width: 400px;
+      }
+
+    .me{
+        width: 362px;
+        height: 270px;
+        left: 3px;
+        top: 370px;
+    }
+    .imgbox{
+        left: 4px;
+    }
+.about{
+    top: 300px;
+    width: 350px;
+    left: -14px;
+}
+.about .pabout{
+    font-size: 0.6rem;
+}
+.slider{
+    top: 300px;
+    width: 370px;
+    left: -3px;
+
+}
+.contact{
+    top: 300px;
+    width: 400px;
+}
+.contact p{
+    font-size: 0.5rem;
+}
+.ul2{
+    gap: 10px;
+    left: -210px;
+}
+.bt{
+    left: 88%;
+}
+}
+
+
+
+
+@media screen and ( max-width:380px ){
+
+    .nav .menu{
+        opacity: 1;
+        left: 340px;
+     }
+     .nav .close{
+        left: 300px;
+     }
+     .nav .menu.hide{
+        left: -3000px;
+     }
+     .close.show{
+        opacity: 1;
+     }
+     .close.hide{
+        opacity: 0;
+     }
+     .me.show{
+        top: 480px;
+     }
+    .ul{
+        display: block;
+        left: 30px;
+        top: 70px;
+       transform: translateX(-140px);
+    }
+    .ul .logo{
+        top: -50px;
+        left: 30px;
+        transform: translateX(130px);
+    }
+    .logo.show{
+        transform: translateX(0px);
+    }
+    .ul.show{
+        transform: translateX(0px);
+    }
+    .nav.show{
+        height: 200px;
+    }
+
+    .logo.hide{
+        transform: translateX(300px);
+    }
+    .ul.hide{
+        transform: translateX(-300px);
+    }
+    .nav.hide{
+        height: 80px;
+    }
+      .nav{
+        width: 380px;
+      }
+
+    .me{
+        width: 362px;
+        height: 270px;
+        left: 13px;
+        top: 370px;
+    }
+    .imgbox{
+        left: 14px;
+    }
+.about{
+    top: 300px;
+    width: 350px;
+    left: 0px;
+}
+.about .pabout{
+    font-size: 0.6rem;
+}
+.slider{
+    top: 300px;
+    width: 370px;
+    left: 6px;
+
+}
+.contact{
+    top: 300px;
+    width: 380px;
+}
+.contact p{
+    font-size: 0.5rem;
+}
+.ul2{
+    gap: 10px;
+    left: -210px;
+}
+.bt{
+    left: 88%;
+}
+}
+
